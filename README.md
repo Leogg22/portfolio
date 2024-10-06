@@ -21,14 +21,14 @@ Visit my portfolio to explore these projects in more detail.
 
 ## Technologies
 Here is a list of the main technologies I have experience with:
-- **Languages**: C, C++, C#, HTML, CSS, JavaScript
+- **Languages**: C, C++, C#, HTML, CSS, JavaScript(beginner)
 - **Databases**: MySQL, Access, Azure
 - **Other Tools**: Git, Visual Studio Code, WordPress, Linux, Arch, Windows
 
 ## Contact
 Feel free to reach out to me via email or connect with me on LinkedIn or GitHub:
-- **Email**: me@leonardoglz.com
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/leonardoglz)
-- **GitHub**: [GitHub Profile](https://github.com/leonardoglz)
+- **Email**: contact@leonardoglz.com
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/leonardo-gonzalez-53230432b)
+- **GitHub**: [GitHub Profile](https://github.com/Leogg22/)
 
 Thank you for visiting my portfolio!
