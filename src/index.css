@@ -10,95 +10,87 @@
 
 /* Tabs */
 
-/* Tabs Container */
+/* Tabs Wrapper */
 .tabs-wrapper {
-  padding-top: 4rem; /* Adjust this value for more or less spacing */
+  padding-top: 4rem;
 }
 
 /* Tabs Container */
 .tab-container {
   padding: 1rem;
   color: #e4a34e;
-  /* border: 1px solid #e4a34e; */
   border-radius: 8px;
-  transition: border 0.3s ease;
 }
-
 
 /* Center and Style Tab Buttons */
 .tab-buttons {
   display: flex;
-  justify-content: center; /* Center-align buttons */
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap; /* Make buttons wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .tab-buttons button {
   padding: 0.5rem 1.5rem;
-  background-color: #333; /* Dark background for inactive buttons */
-  color: #e4a34e; /* Orange text */
-  border: 1px solid #e4a34e;
-  border-radius: 5px;
+  background-color: #333;
+  color: #e4a34e;
+  border: 2px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 1rem;
-  min-width: 120px; /* Ensure buttons have a minimum width for readability */
+  min-width: 120px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 /* Active Tab Button */
 .tab-buttons button.active {
-  background-color: #e4a34e; /* Orange background for active tab */
-  color: #1a1a1a; /* Dark text color for contrast */
-  border-color: #e4a34e;
-}
-
-/* Hover Effect on Buttons */
-.tab-buttons button:hover {
-  background-color: #e4a34e; /* Orange on hover */
+  background-color: #e4a34e;
   color: #1a1a1a;
+  border-color: #e4a34e;
+  transform: scale(1.05); /* Slightly increase size for active state */
 }
 
-/* Optional Border for Tab Content */
+/* Hover Effect */
+.tab-buttons button:hover {
+  background-color: #e4a34e;
+  color: #1a1a1a;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Tab Content */
 .tab-content {
   padding: 1rem;
   border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  animation: slide-in 0.5s ease; /* Slide animation */
 }
 
-/* Delete the next line if you want to remove the border */
+/* Optional Border for Tab Content */
 .tab-content-border {
-  border: 1px solid #555555; /* Orange border */
-  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #555555;
+  border-radius: 8px;
+}
+
+/* Slide Animation */
+@keyframes slide-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 640px) {
   .tab-buttons button {
-    font-size: 0.9rem; /* Smaller text on small screens */
-    padding: 0.4rem 1rem; /* Adjust padding */
-    min-width: 100px; /* Slightly smaller minimum width */
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    min-width: 100px;
   }
-}
-
-
-.tab-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 18px;
-  gap: 25px;
-  font-size: 0.7em;
-  letter-spacing: 2px;
-  color: white;
-  cursor: pointer;
-  background: linear-gradient(to right, rgb(59, 59, 59), rgb(34, 34, 34));
-  position: relative;
-  border-radius: 8px;
-  border: 1px solid rgb(65, 65, 65);
-  transition-duration: 0.3s;
-}
-
-.tab-buttons:hover {
-  transition-duration: 0.3s;
-  box-shadow: 0px 0px 2px rgb(185, 185, 185), 0px 0px 10px rgb(97, 97, 97);
 }
