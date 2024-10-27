@@ -4,7 +4,7 @@ import profilePic from "../assets/TempProfile.png";
 import { delay, motion } from "framer-motion"
 
 const container = (delay) => ({
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x: 100, opacity: 0 },
     visible: {
         x: 0,
         opacity: 1,
@@ -19,7 +19,7 @@ const container = (delay) => ({
                     <div className="w-full lg:w-1/2">
                         <div className="flex flex-col item-center lg:items-start">
                             <motion.h1
-                                variants={container(0)}
+                                variants={container(.2)}
                                 initial="hidden"
                                 animate="visible"
                                 className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text8xl">Leonardo Gonzalez</motion.h1>

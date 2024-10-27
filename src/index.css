@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box; 
+}
+
 :root{
   font-family: "Inter", sans-serif;
 }
@@ -13,6 +19,7 @@
 /* Tabs Wrapper */
 .tabs-wrapper {
   padding-top: 4rem;
+  border-radius: 70px;
 }
 
 /* Tabs Container */
