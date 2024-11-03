@@ -6,7 +6,7 @@ export const HERO_CONTENT = `I’m a Computer Science student with a solid found
 
 export const EDUCATION =  [
     {
-        year: "2024 - 2028",
+        year: "2024 - 2026",
         degree: "Bachelor of Science in Computer Science",
         institution: "South Texas College",
         location: "South Texas College, TX",
