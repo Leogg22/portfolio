@@ -27,7 +27,7 @@ const container = (delay) => ({
                                 variants={container(.5)}
                                 initial="hidden"
                                 animate="visible"
-                                className="bg-gradient-to-r from-orange-300 via-orange-100 to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">Frontend Developer & Software Engineer</motion.span>
+                                className="bg-gradient-to-r from-orange-200 via-orange-100 to-orange-100 bg-clip-text text-3xl tracking-tight text-transparent">Frontend Developer & Software Engineer</motion.span>
                             <motion.p
                                 variants={container(1)}
                                 initial="hidden"

@@ -8,10 +8,19 @@
   margin: 0px; 
   padding: 0px; 
   box-sizing: border-box; 
+  /* background: #000000; */
+  color: #F1EFEF;
 }
 
 :root{
   font-family: "Inter", sans-serif;
+
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #400f68;
 }
 
 /* Tabs */
@@ -25,7 +34,7 @@
 /* Tabs Container */
 .tab-container {
   padding: 1rem;
-  color: #e4a34e;
+  color: #F4DFC8;
   border-radius: 8px;
 }
 
@@ -41,7 +50,7 @@
 .tab-buttons button {
   padding: 0.5rem 1.5rem;
   background-color: #333;
-  color: #e4a34e;
+  color: #F4DFC8;
   border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
@@ -53,15 +62,15 @@
 
 /* Active Tab Button */
 .tab-buttons button.active {
-  background-color: #e4a34e;
+  background-color: #F4DFC8;
   color: #1a1a1a;
-  border-color: #e4a34e;
+  border-color: #F4DFC8;
   transform: scale(1.05); /* Slightly increase size for active state */
 }
 
 /* Hover Effect */
 .tab-buttons button:hover {
-  background-color: #e4a34e;
+  background-color: #F4DFC8;
   color: #1a1a1a;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
