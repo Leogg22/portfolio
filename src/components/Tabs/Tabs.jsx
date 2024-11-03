@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../index.css';
-import WorkTab from '../Experience';
-import EducationTab from '../Education';
+import WorkTab from './ExperienceTab';
+import EducationTab from './EducationTab';
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState('work');

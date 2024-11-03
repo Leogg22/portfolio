@@ -1,7 +1,6 @@
 import React from 'react';
-import aboutImg from "../assets/pondering.png";
 import { delay, motion } from "framer-motion"
-import { EDUCATION } from '../constants';
+import { EDUCATION } from '../../constants';
 
 
 const EducationTab = () => {

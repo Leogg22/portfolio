@@ -9,7 +9,7 @@ export const EDUCATION =  [
         year: "2024 - 2028",
         degree: "Bachelor of Science in Computer Science",
         institution: "South Texas College",
-        location: "South Texas, TX",
+        location: "South Texas College, TX",
         description: "Studying core computer science concepts including software engineering, data structures, algorithms, and artificial intelligence."
     },
     {
@@ -81,10 +81,3 @@ export const PROJECTS = [
     technologies: ["C#", "Visual Studio Code", "MySQL"],
   },
 ];
-
-
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
