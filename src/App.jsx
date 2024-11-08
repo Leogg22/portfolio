@@ -18,7 +18,7 @@ const App = () => {
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-black"></div>
       </div>
 
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-8" style={{padding: '0px 10em 0px 10em'}}>
         <Navbar />
         <Hero />
         <Tabs />

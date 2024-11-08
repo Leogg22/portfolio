@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { PROJECTS } from '../constants';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const Projects = () => {
     return (
@@ -9,42 +9,58 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className="my-20 text-center text-4xl">Projects</motion.h2>
+                className="my-20 text-center text-4xl font-bold">Featured Projects</motion.h2>
 
             <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1 }}
-                className="lg:flex lg:flex-col lg:items-center">
+                className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {PROJECTS.map((project, index) => (
                     <div
                         key={index}
-                        className="mb-8 flex flex-wrap lg:flex lg:flex-row lg:justify-center lg:items-start lg:gap-12"> {/* Increased gap */}
-
-                        <div
-                            className="w-full lg:w-1/4 mb-4 lg:mb-0 lg:pr-8"> {/* Added padding-right */}
+                        className="flex flex-col rounded-lg bg-neutral-800 p-6 shadow-lg transition-transform transform hover:scale-105">
+                        
+                        {/* Image Container */}
+                        <div className="mb-4 w-full h-60 overflow-hidden rounded-lg"> {/* Fixed height */}
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="rounded"
+                                className="w-full h-full object-cover" // Ensures consistent image size
                             />
                         </div>
 
-                        <div
-                            className="w-full max-w-xl lg:w-3/4">
-                            <h6 className="mb-2 font-semibold">{project.title}</h6>
-                            <p className="mb-4 text-neutral-400">{project.description}</p>
-                            <div>
-                                {project.technologies.map((tech, index) => (
-                                    <span key={index} className="mr-2 mt-4 inline-block rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-orange-100">{tech}</span>
-                                ))}
-                            </div>
+                        <h6 className="mb-2 text-lg font-semibold text-white">{project.title}</h6>
+                        <p className="mb-4 text-sm text-neutral-400">{project.description}</p>
+                        
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {project.technologies.map((tech, techIndex) => (
+                                <span key={techIndex} className="inline-block rounded bg-neutral-900 px-2 py-1 text-xs font-medium text-orange-100">
+                                    {tech}
+                                </span>
+                            ))}
                         </div>
+                        
+                        {/* {project.link && (
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-auto inline-flex items-center justify-center rounded bg-orange-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-orange-700">
+                                {project.linkText || 'Source'}
+                            </a>
+                        )} */}
                     </div>
                 ))}
             </motion.div>
+
+            {/* <div className="text-center mt-10">
+                <a href="/projects" className="text-orange-100 hover:text-orange-500 transition-colors">
+                    View more →
+                </a>
+            </div> */}
         </div>
     );
-}
+};
 
 export default Projects;

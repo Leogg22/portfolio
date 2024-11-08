@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO_CONTENT } from "../constants/index";
-import profilePic from "../assets/TempProfile.png";
+import profilePic from "../assets/ProfilePic.png";
 import { delay, motion } from "framer-motion"
 import CV from "./DownloadCVbn";
 import { GrResume } from 'react-icons/gr';
@@ -53,7 +53,7 @@ const Hero = () => {
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1.2 }}
                             src={profilePic} alt="profile"
-                            className="rounded-full w-40 h-40 lg:w-60 lg:h-60 mt-8" />
+                            className="rounded-full w-60 h-60 lg:w-60 lg:h-60 mt-8" />
                     </div>
                 </div>
             </div>
