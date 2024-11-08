@@ -38,9 +38,12 @@ const Hero = () => {
                             animate="visible"
                             className="my-2 max-2-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
 
-                        <a href={resume} download="Resume-Leonardo Gonzalez" target="_blank" rel="noreferrer">
+                        <motion.a href={resume} download="Resume-Leonardo Gonzalez" target="_blank" rel="noreferrer"
+                            variants={container(1.5)}
+                            initial="hidden"
+                            animate="visible">
                             <CV className="mt-10 text-center mr-8" />
-                        </a>
+                        </motion.a>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
