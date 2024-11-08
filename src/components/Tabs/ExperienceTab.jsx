@@ -5,7 +5,7 @@ import { delay, motion } from "framer-motion"
 
 const ExperienceTab = () => {
     return (
-        <div className="border-b border-neutral-900">
+        <div className="">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
