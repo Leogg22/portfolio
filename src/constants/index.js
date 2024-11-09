@@ -2,23 +2,24 @@ import project1 from "../assets/projects/Project1.png";
 import project2 from "../assets/projects/Project2.png";
 import project3 from "../assets/projects/Project3.png";
 import project4 from "../assets/projects/Project4.png";
-export const HERO_CONTENT = `I’m a Computer Science student with a solid foundation in full-stack development, skilled in crafting scalable applications using C#, MySQL, and C++. With hands-on experience from multiple projects and internships, I’m focused on developing innovative tech solutions that enhance usability and drive impact.`;
+export const HERO_CONTENT = `Computer Science student of 18 years old at South Texas College focused on software engineering, data structures, and AI. Aspiring software engineer aiming to create impactful, innovative solutions.
+`;
 
-export const EDUCATION =  [
-    {
-        year: "2024 - 2026",
-        degree: "Bachelor of Science in Computer Science",
-        institution: "South Texas College",
-        location: "South Texas College, TX",
-        description: "Studying core computer science concepts including software engineering, data structures, algorithms, and artificial intelligence."
-    },
-    {
-        year: "2020 - 2024",
-        degree: "High School Diploma with a focus on Technical Programming",
-        institution: "Reynosa Technical High School",
-        location: "Reynosa, Tamaulipas, Mexico",
-        description: "Completed coursework in programming fundamentals, database design, and systems analysis, with hands-on experience in C, MySQL, and Access."
-    }
+export const EDUCATION = [
+  {
+    year: "2024 - 2026",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "South Texas College",
+    location: "South Texas College, TX",
+    description: "Studying core computer science concepts including software engineering, data structures, algorithms, and artificial intelligence."
+  },
+  {
+    year: "2020 - 2024",
+    degree: "High School Diploma with a focus on Technical Programming",
+    institution: "Reynosa Technical High School",
+    location: "Reynosa, Tamaulipas, Mexico",
+    description: "Completed coursework in programming fundamentals, database design, and systems analysis, with hands-on experience in C, MySQL, and Access."
+  }
 ];
 
 export const EXPERIENCES = [
@@ -58,6 +59,7 @@ export const PROJECTS = [
     description:
       "A ticket management system designed for a soccer league, featuring secure user authentication, ticket purchase, and database integration for real-time tracking.",
     technologies: ["C", "Database Design", "Project Management"],
+    link: "https://github.com/Leogg22/fanid-ticketing-system",
   },
   {
     title: "Cyberpuerta Store Database",
@@ -65,6 +67,7 @@ export const PROJECTS = [
     description:
       "A relational database modeled after an e-commerce store, including interconnected tables for products, sales, and customer data, with efficient querying capabilities.",
     technologies: ["Microsoft Access", "MySQL"],
+    link: "https://www.youtube.com/watch?v=ReSrtJ4dtE4&t=584s",
   },
   {
     title: "E-Commerce Website",
@@ -72,6 +75,7 @@ export const PROJECTS = [
     description:
       "A comprehensive e-commerce platform with product catalog, shopping cart, and checkout functionalities, customized for small business needs.",
     technologies: ["WordPress", "HTML", "CSS", "MySQL"],
+    link: "http://just2084.temp.domains/~tecnico8/techdo2/",
   },
   {
     title: "Currency Exchange System",
@@ -79,5 +83,6 @@ export const PROJECTS = [
     description:
       "A currency exchange application that allows users to view and calculate exchange rates, with secure and optimized data handling.",
     technologies: ["C#", "Visual Studio Code", "MySQL"],
+    link: "https://github.com/Leogg22/Exchange-System",
   },
 ];

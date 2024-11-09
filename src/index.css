@@ -27,86 +27,160 @@
 
 /* Tabs Wrapper */
 .tabs-wrapper {
-  padding-top: 4rem;
-  border-radius: 70px;
+  padding-top: 0rem;
+  margin-top: 3rem; /* Add space above tabs */
+  border-radius: 1rem;
+  background-color: #000; /* Black background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  max-width: 50em;
+  margin: 3rem auto; /* Center the container and add vertical spacing */
+  border: 1px solid #333; /* Border to define the interface edge */
 }
 
-/* Tabs Container */
-.tab-container {
-  padding: 1rem;
-  color: #F4DFC8;
-  border-radius: 8px;
-}
 
-/* Center and Style Tab Buttons */
+/* Tab Buttons Container */
 .tab-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #101425; /* Slightly lighter black for contrast */
+  border-radius: 1rem 1rem 0 0; /* Rounded top corners */
+  overflow: hidden; /* Smooth edges for button transitions */
 }
 
+/* Individual Tab Buttons */
 .tab-buttons button {
-  padding: 0.5rem 1.5rem;
-  background-color: #333;
+  flex: 1; /* Distribute buttons evenly */
+  padding: 1rem;
+  background-color: transparent;
   color: #F4DFC8;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid transparent;
   font-size: 1rem;
-  min-width: 120px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 /* Active Tab Button */
 .tab-buttons button.active {
-  background-color: #F4DFC8;
-  color: #1a1a1a;
-  border-color: #F4DFC8;
-  transform: scale(1.05); /* Slightly increase size for active state */
+  background-color: #1a1a1a; /* Active tab background */
+  color: #F4DFC8;
+  border-bottom: 3px solid #F4DFC8; /* Highlight active tab */
 }
 
 /* Hover Effect */
 .tab-buttons button:hover {
-  background-color: #F4DFC8;
-  color: #1a1a1a;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  background-color: #333; /* Darker hover effect */
+  color: #F4DFC8;
 }
 
 /* Tab Content */
 .tab-content {
-  padding: 1rem;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  animation: slide-in 0.5s ease; /* Slide animation */
+  padding: 1.5rem;
+  background-color: #101010; /* Darker area for content */
+  border-radius: 0 0 1rem 1rem; /* Rounded bottom corners */
+  color: #f0f0f0;
+  animation: fade-in 0.5s ease;
 }
 
-/* Optional Border for Tab Content */
-.tab-content-border {
-  border: 1px solid #555555;
-  border-radius: 8px;
-}
-
-/* Slide Animation */
-@keyframes slide-in {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+/* Fade Animation */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Responsive Design */
 @media (max-width: 640px) {
   .tab-buttons button {
     font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-    min-width: 100px;
+    padding: 0.75rem;
   }
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+/* Projects Section */
+
+/* Projects Section */
+.projects-section {
+  padding-bottom: 3rem;
+  background-color: #000;
+}
+
+/* Projects Title */
+.projects-title {
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Container */
+.image-container {
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/* Project Title */
+.project-title {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Project Description */
+.project-description {
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Tech Tags */
+.tech-tags {
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background-color: #222;
+  color: #bbb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Project Link */
+.project-link {
+  background-color: #222;
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #333;
+}
+

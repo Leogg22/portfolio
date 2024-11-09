@@ -8,6 +8,8 @@ import Education from './components/Tabs/EducationTab'
 import Footer from './components/Footer'
 import Tabs from './components/Tabs/Tabs' // Import the Tabs component
 
+import BlurFade from "./components/ui/blur-fade";
+
 const App = () => {
   return (
     // Icons and selecting text visible
@@ -17,16 +19,17 @@ const App = () => {
         {/* <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-black"></div>
       </div>
-
-      <div className="container mx-auto px-8" style={{padding: '0px 10em 0px 10em'}}>
-        <Navbar />
-        <Hero />
-        <Tabs />
-        {/* <Education /> */}
-        <Technologies />
-        {/* <Experience /> */}
-        <Projects />
-        <Footer />
+{/* 
+      <div className="container mx-auto px-8" style={{ padding: '0px 10em 0px 10em' }}> */}
+      <div className="container mx-auto px-8" >
+        <BlurFade delay={0.25 * 2} inView blur='5px'>
+          <Navbar />
+          <Hero />
+          <Tabs />
+          <Technologies />
+          <Projects />
+          <Footer />
+        </BlurFade>
       </div>
     </div>
   )

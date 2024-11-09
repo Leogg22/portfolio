@@ -18,42 +18,27 @@ const container = (delay) => ({
 
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+        <div className="border-b border-neutral-900 pb-4 lg:mb-35" >
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col item-center lg:items-start">
-                        <motion.h1
-                            variants={container(.2)}
-                            initial="hidden"
-                            animate="visible"
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text8xl">Leonardo Gonzalez</motion.h1>
-                        <motion.span
-                            variants={container(.5)}
-                            initial="hidden"
-                            animate="visible"
-                            className="bg-gradient-to-r from-orange-200 via-orange-100 to-orange-100 bg-clip-text text-3xl tracking-tight text-transparent">Frontend Developer & Software Engineer</motion.span>
-                        <motion.p
-                            variants={container(1)}
-                            initial="hidden"
-                            animate="visible"
-                            className="my-2 max-2-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+                        <h1
+                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text8xl">Leonardo Gonzalez</h1>
+                        <span
+                            className="bg-gradient-to-r from-orange-200 via-orange-100 to-orange-100 bg-clip-text text-3xl tracking-tight text-transparent">Frontend Developer & Software Engineer</span>
+                        <p
+                            className="my-2 max-2-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</p>
 
-                        <motion.a href={resume} download="Resume-Leonardo Gonzalez" target="_blank" rel="noreferrer"
-                            variants={container(1.5)}
-                            initial="hidden"
-                            animate="visible">
+                        <a href={resume} download="Resume-Leonardo Gonzalez" target="_blank" rel="noreferrer">
                             <CV className="mt-10 text-center mr-8" />
-                        </motion.a>
+                        </a>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center lg:pl-8">
-                        <motion.img
-                            initial={{ x: 100, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1, delay: 1.2 }}
+                        <img
                             src={profilePic} alt="profile"
-                            className="rounded-full w-60 h-60 lg:w-60 lg:h-60 mt-8" />
+                            className="rounded-full w-80 h-80 lg:w-80 lg:h-80 mt-1" />
                     </div>
                 </div>
             </div>

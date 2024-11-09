@@ -1,36 +1,17 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
-import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-    initial: { y: -10 },
-    animate: {
-        y: [10, -10],
-        transition: {
-            duration: duration,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "reverse",
-        }
-    }
-});
 
 const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-16">
-            <motion.h2
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
-                transition={{ duration: 0.5 }}
+            <h2
                 className="my-12 text-center text-3xl mx-auto">
                 Technologies I Have Worked With
-            </motion.h2>
+            </h2>
 
-            <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
+            <div
                 className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto max-w-screen-lg"> {/* Updated to smaller grid layout */}
 
                 {/* HTML5 */}
@@ -87,7 +68,7 @@ const Technologies = () => {
                     </div>
                 </div>
                 
-            </motion.div>
+            </div>
         </div>
     );
 }
